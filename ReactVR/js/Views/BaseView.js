@@ -20,6 +20,7 @@ import * as Yoga from '../Utils/Yoga.bundle';
 import UIManager from '../Modules/UIManager';
 
 import type {UIView, GuiSys} from 'ovrui';
+import type {ReactNativeContext} from '../ReactNativeContext';
 
 const INTERACTION_CALLBACKS = [
   'onEnter',
@@ -126,7 +127,7 @@ export default class RCTBaseView {
   /**
    * constructor: sets defaults for all views
    */
-  constructor(guisys: GuiSys) {
+  constructor(guisys: GuiSys, rnctx?: ReactNativeContext) {
     this._borderRadius = null;
     this._borderTopLeftRadius = null;
     this._borderTopRightRadius = null;

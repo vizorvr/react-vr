@@ -218,7 +218,7 @@ export default class UIManager extends Module {
 
     customViews.forEach(({name, view}) => {
       this.registerViewType(name, view.describe(), function() {
-        return new view(guiSys);
+        return new view(guiSys, rnctx);
       });
     });
   }
