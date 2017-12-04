@@ -156,6 +156,7 @@ export default class RCTBaseView {
       (this.style: any),
       'backgroundColor',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0;
@@ -181,6 +182,7 @@ export default class RCTBaseView {
       (this.style: any),
       'borderColor',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0xff000000;
@@ -193,6 +195,7 @@ export default class RCTBaseView {
       (this.style: any),
       'borderRadius',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0.0;
@@ -206,6 +209,7 @@ export default class RCTBaseView {
       (this.style: any),
       'borderTopLeftRadius',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0.0;
@@ -219,6 +223,7 @@ export default class RCTBaseView {
       (this.style: any),
       'borderTopRightRadius',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0.0;
@@ -232,6 +237,7 @@ export default class RCTBaseView {
       (this.style: any),
       'borderBottomLeftRadius',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0.0;
@@ -245,6 +251,7 @@ export default class RCTBaseView {
       (this.style: any),
       'borderBottomRightRadius',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = 0.0;
@@ -258,6 +265,7 @@ export default class RCTBaseView {
       (this.style: any),
       'renderGroup',
       ({
+        configurable: true,
         set: value => {
           if (value == null) {
             value = false;
@@ -271,6 +279,7 @@ export default class RCTBaseView {
         this.props,
         element.toString(),
         ({
+          configurable: true,
           set: value => {
             if (this.props['_' + element] !== value) {
               this.interactableCount += value ? 1 : -1;
